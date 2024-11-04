@@ -1,0 +1,172 @@
+/* Paleta de colores pastel */
+:root {
+    --color-blanco: #ffffff;
+    --color-rosa-pastel: #ffe0e9;
+    --color-verde-pastel: #d3f9d8;
+    --color-lila-pastel: #e5d1f2;
+    --color-gris-suave: #f0f0f0;
+    --color-texto: #555555;
+}
+
+/* Fuente general de la página */
+body {
+    font-family: 'Nunito', sans-serif; /* Cambia por otra sin serifa si prefieres */
+    background-color: var(--color-blanco);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Estilo para los títulos */
+h1, h2, h3 {
+    color: var(--color-texto);
+    text-align: center;
+}
+
+/* Secciones de la página */
+section {
+    padding: 2rem;
+    background-color: var(--color-blanco);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Caja de contenido con fondo pastel */
+.pastel-box {
+    background-color: var(--color-rosa-pastel);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlaces */
+a {
+    color: var(--color-verde-pastel);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-lila-pastel);
+}
+
+/* Botones */
+button {
+    background-color: var(--color-verde-pastel);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    color: var(--color-texto);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-rosa-pastel);
+}
+
+/* Fondo de la página */
+body {
+    background-color: var(--color-gris-suave);
+}
+
+/* Bordes redondeados y sombras suaves para las imágenes */
+img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de escala suave para imágenes */
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Cabecera */
+header {
+    background-color: var(--color-verde-pastel);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: var(--color-texto);
+    font-size: 2.5rem;
+}
+
+/* Estilo de la barra de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--color-texto);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-lila-pastel);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-gris-suave);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--color-texto);
+}
+
+/* Tarjetas para ilustraciones */
+.card {
+    background-color: var(--color-blanco);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+/* Animación de flotación suave */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+}}
+
+/* Aplica la animación a elementos como el personaje o nubes */
+.float {
+    animation: float 3s ease-in-out infinite;
+}
